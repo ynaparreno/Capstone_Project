@@ -1,3 +1,10 @@
+<script>
+	function logout() {
+		document.cookie = "PHPSESSID=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+		window.location.href = "/Online_Hotel_Reservation/Online_Hotel_Reservation/admin/";
+	}
+</script>
+
 <!DOCTYPE html>
 <?php
 	require_once 'validate.php';
@@ -37,7 +44,8 @@
 
 			<li><a href = "account.php">Accounts</a></li>
 			<li><a href = "reserve.php">Reservation</a></li>
-			<li><a href = "room.php">Room</a></li>			
+			<li><a href = "room.php">Room</a></li>	
+			<li><a onclick="logout()" style="cursor: pointer;">Logout</a></li>
 		</ul>	
 	</div>
 	<br />
