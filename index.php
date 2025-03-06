@@ -5,12 +5,12 @@
         ?.split('=')[1] || null;
 
 	if (!access_token) {
-		window.location.href = '/Online_Hotel_Reservation/Online_Hotel_Reservation/login.php';
+		window.location.href = '/Online_Hotel_Reservation/Online_Hotel_Reservation/register.php';
 	}
 
 	function logout (){
 		document.cookie = "access_token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-		window.location.href = '/Online_Hotel_Reservation/Online_Hotel_Reservation/login.php';
+		window.location.href = '/Online_Hotel_Reservation/Online_Hotel_Reservation/register.php';
 	}
 	
 </script>
@@ -36,7 +36,7 @@
 		<li><a href = "aboutus.php">About us</a></li> |
 		<li><a href = "contactus.php">Contact us</a></li> |		
 		<li><a href = "reservation.php">Make a reservation</a></li> |
-		<li><a id="logout" onclick="logout()" style="cursor: pointer;">Logout</a></li>
+		<li><a id="logout" onclick="logout()" style="cursor: pointer;">log out</a></li>
 	</ul>
 	<div id="myCarousel" class="carousel slide container-fluid" data-ride="carousel">
 		<ol class="carousel-indicators">

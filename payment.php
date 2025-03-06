@@ -14,6 +14,7 @@
             <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 50%; height: 100%;">
                 <p style="font-size: 2rem;">Number: 09123456789</p>
                 <p style="font-size: 1.5rem;">Name: Juan Dela Cruz</p>
+                <p style="font-size: 1.5rem;"><a href="/Online_Hotel_Reservation/Online_Hotel_Reservation/reply_reserve.php">Done paying</a></p>
             </div>
         </div>
     </main>

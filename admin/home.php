@@ -28,7 +28,7 @@
 				<li class = "dropdown">
 					
 					<ul class="dropdown-menu">
-						<li><a href="logout.php"><i class = "glyphicon glyphicon-off"></i> Logout</a></li>
+						<li><a href="logout.php"><i class = "glyphicon glyphicon-off"></i> log out</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -45,7 +45,7 @@
 			<li><a href = "account.php">Accounts</a></li>
 			<li><a href = "reserve.php">Reservation</a></li>
 			<li><a href = "room.php">Room</a></li>	
-			<li><a onclick="logout()" style="cursor: pointer;">Logout</a></li>
+			<li><a onclick="logout()" style="cursor: pointer;">log out</a></li>
 		</ul>	
 	</div>
 	<br />

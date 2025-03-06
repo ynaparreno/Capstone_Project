@@ -95,7 +95,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
     <div class="register-container">
-        <h2>Login</h2>
+        <h2>login</h2>
         <?php if (isset($error)): ?>
             <div class="error"><?php echo $error; ?></div>
         <?php endif; ?>
@@ -112,7 +112,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <button type="submit" name="login">Login</button>
             </div>
             <p style="text-align: center;">
-                Don't have an account? <a href="register.php">Sign up here</a>
+                Don't have an account? <a href="register.php">Register here</a>
             </p>
         </form>
     </div>

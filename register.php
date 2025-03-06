@@ -9,9 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['signup'])) {
     $sql = "INSERT INTO user (full_name, username, password) VALUES ('$full_name', '$username', '$password')";
     
     if ($conn->query($sql) === TRUE) {
-        $access_token = base64_encode($username . ':' . $_POST['password']);
-        setcookie('access_token', $access_token, time() + (86400 * 30), "/");
-        header("Location: /Online_Hotel_Reservation/Online_Hotel_Reservation/");
+        header("Location: /Online_Hotel_Reservation/Online_Hotel_Reservation/login.php");
         exit();
     } else {
         $error_message = "Error: " . $conn->error;
@@ -23,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['signup'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <title>register</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -107,7 +105,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['signup'])) {
             </p>
         </form>
     </div>
-
     <script>
         if (document.cookie.includes('access_token')) {
             window.location.href = '/Capstone_Project/';

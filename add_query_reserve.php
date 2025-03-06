@@ -31,7 +31,7 @@
 						if($guest_id = $fetch['guest_id']){
 							$room_id = $_REQUEST['room_id'];
 							$conn->query("INSERT INTO `transaction`(guest_id, room_id, status, checkin) VALUES('$guest_id', '$room_id', 'Pending', '$checkin')") or die(mysqli_error());
-							header("location:reply_reserve.php");
+							header("location:payment.php");
 						}else{
 							echo "<script>alert('Error Javascript Exception!')</script>";
 						}
